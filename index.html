@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>vue</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+</head>
+
+<body>
+  <div id="app">
+    <div id="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <i class="glyphicon glyphicon-time"></i>
+            Vue Time Tracker
+          </a>
+          <ul class="nav navbar-nav">
+            <li><router-link to='/home'>Home</a></li>
+            <li><router-link to='/hello'>HEllo</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-9">
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
